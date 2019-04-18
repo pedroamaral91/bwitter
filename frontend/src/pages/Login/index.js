@@ -9,9 +9,9 @@ export default class Login extends Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
   handleSubmit = e => {
     e.preventDefault();
-    const { username } = this.state;
+    const { username } = this.state;    
     if (!username.length) return;
-    localStorage.setItem('@Zwitter:username', username);
+    localStorage.setItem('@Bwitter:username', username);
     this.props.history.push('/timeline');
   }
 
@@ -19,7 +19,7 @@ export default class Login extends Component {
     return (
       <div className="login-wrapper">
         <img src={twitterLogo} alt="LogoTwitter" />
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <input
             name="username"
             placeholder="Nome do usuário"
