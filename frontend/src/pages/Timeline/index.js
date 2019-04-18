@@ -22,7 +22,6 @@ export default class Timeline extends Component {
     if (e.keyCode !== 13) return;
     const { newTweet } = this.state;
     const author = localStorage.getItem('@Bwitter:username');
-    console.log(newTweet, author);
     await api.post('tweets', { content: newTweet, author });
     this.setState({ newTweet: '' });
 
