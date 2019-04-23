@@ -7,7 +7,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-mongoose.connect('mongodb+srv://pedro:hehe123@bwitter-pneqs.mongodb.net/bwitter', {
+mongoose.connect('YOUR-MONGODB-ADDRESS', {
   useNewUrlParser: true
 });
 

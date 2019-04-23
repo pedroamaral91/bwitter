@@ -52,7 +52,7 @@ export default class Timeline extends Component {
             value={this.state.newTweet}
             onChange={this.handleChange}
             onKeyDown={this.handleNewTweet}
-            placeholder="O que está acontecendo?"
+            placeholder="Whats happend?"
           />
         </form>
         <ul className="tweet-list">

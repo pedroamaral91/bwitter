@@ -22,11 +22,11 @@ export default class Login extends Component {
         <form onSubmit={this.handleSubmit}>
           <input
             name="username"
-            placeholder="Nome do usuário"
+            placeholder="Username"
             value={this.state.username}
             onChange={this.handleChange}
           />
-        <button type="submit">Entrar</button>
+        <button type="submit">Sign in</button>
         </form>
       </div>
     );
