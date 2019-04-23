@@ -6,3 +6,6 @@
 #####
 Clone this repository into a folder. Enter in backend/ directory and install the dependencies with `yarn install` or `npm install`. After up the node application with `yarn start` or `npm start`.
 Do the same with the frontend/ folder.
+To run mobile application, you will need a android/ios emulator. Install the dependencies like a node/react application, and run `react-native run-android` or `react-native run-ios`.
+
+
